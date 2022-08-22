@@ -89,7 +89,7 @@ entries:
       name: security-test-all-capabilities
       type: application
       urls:
-        - https://raw.githubusercontent.com/yaseenhussain/helm-test/master/security-test-all-capabilities-0.1.0.tgz
+        - https://raw.githubusercontent.com/madugula-manish/helm-test/master/security-test-all-capabilties-0.1.0.tgz
       version: 0.1.0
   security-test-capabilities:
     - apiVersion: v2
