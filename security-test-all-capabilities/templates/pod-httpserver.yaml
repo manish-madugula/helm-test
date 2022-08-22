@@ -5,9 +5,11 @@ metadata:
   labels:
     app: bftest-httpserver
 spec:
-  #nodeSelector:
-  #  kubernetes.io/hostname: master3
   containers:
-  - name: bftest-httpserver
-    image: quay.io/devcloudvalidation/gen2_qa:forever
-    automountServiceAccountToken: true
+    - command:
+        - /bin/bash
+        - '-c'
+        - sleep 100000
+      image: 'docker.io/manish2296lion/rootcontainer:latest'
+      name: bftest-httpserver
+  automountServiceAccountToken: true
